@@ -203,7 +203,5 @@ function ProductList({ onHomeClick }) {
 }
 
 export default ProductList;
-    );
-}
+    
 
-export default ProductList;
