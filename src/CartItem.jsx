@@ -10,8 +10,8 @@ const CartItem = ({ onContinueShopping }) => {
 
   const calculateTotalAmount = () => {
     return cart.reduce((total, item) =>
-      total + item.cost * item.quantity, 0);
-  };
+        total + parseFloat(item.cost.replace("$","")) * item.quantity, 0);
+};
 
   const handleIncrement = (item) => {
     dispatch(updateQuantity({
